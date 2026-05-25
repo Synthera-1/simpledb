@@ -13,3 +13,20 @@ AP Computer Science A Final Project
 -  File persistence (schema.txt + CSV files)
 -  Color-coded output (success/error messages)
 -  Multi-line query support
+
+##  Updates & Changelog
+
+### Version 1.0 (May 18th 2026)
+- Initial release
+- Core SQL operations implemented
+- Basic WHERE clause support
+
+### Version 1.1 (May 23rd 2026)
+- Added JOIN (INNER and LEFT)
+- Added aggregate functions
+- Fixed CSV parsing for text with commas
+
+### Version 1.2 (May 25th 2026)
+- Added color output
+- Improved error messages
+- Multi-line query support
