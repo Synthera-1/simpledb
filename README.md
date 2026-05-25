@@ -16,17 +16,17 @@ AP Computer Science A Final Project
 
 ##  Updates & Changelog
 
-### Version 1.0 (May 18th 2026)
+### Version 1.0 (May 17th 2026) (~22 hours)
 - Initial release
 - Core SQL operations implemented
 - Basic WHERE clause support
 
-### Version 1.1 (May 23rd 2026)
+### Version 1.1 (May 23rd 2026) (~15 hours)
 - Added JOIN (INNER and LEFT)
 - Added aggregate functions
 - Fixed CSV parsing for text with commas
 
-### Version 1.2 (May 25th 2026)
+### Version 1.2 (May 25th 2026) (~7 hours)
 - Added color output
 - Improved error messages
 - Multi-line query support
