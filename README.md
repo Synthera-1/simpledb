@@ -1,37 +1,56 @@
-# simpledb
-AP Computer Science A Final Project
+# SimpleDB
 
-## Features
+**AP Computer Science A Final Project**
 
--  CREATE TABLE with INT, FLOAT, TEXT data types
--  PRIMARY KEY, NOT NULL, UNIQUE constraints
--  INSERT, SELECT, UPDATE, DELETE operations
--  WHERE clause with AND/OR logic
--  ORDER BY (ASC/DESC) and LIMIT
--  Aggregate functions (COUNT, SUM, AVG, MIN, MAX)
--  INNER JOIN and LEFT JOIN
--  File persistence (schema.txt + CSV files)
--  Color-coded output (success/error messages)
--  Multi-line query support
+A lightweight SQL database engine built from scratch in C++.
 
-##  Updates & Changelog
+---
 
-### Version 1.0 (May 17th 2026) (~22 hours)
-- Initial release
-- Core SQL operations implemented
-- Basic WHERE clause support
+##  Features
 
-### Version 1.1 (May 23rd 2026) (~15 hours)
+| Category | Features |
+|----------|----------|
+| **Schema** | CREATE TABLE with INT, FLOAT, TEXT data types |
+| **Constraints** | PRIMARY KEY, NOT NULL, UNIQUE |
+| **CRUD** | INSERT, SELECT, UPDATE, DELETE |
+| **Query** | WHERE clause with AND/OR logic |
+| **Sorting** | ORDER BY (ASC/DESC) and LIMIT |
+| **Aggregates** | COUNT, SUM, AVG, MIN, MAX |
+| **Joins** | INNER JOIN and LEFT JOIN |
+| **Persistence** | schema.txt + CSV files |
+| **UX** | Color-coded output, multi-line queries |
+
+---
+
+##  Changelog
+
+### Version 1.2 (May 25, 2026) ~7 hours
+- Added color output
+- Improved error messages  
+- Multi-line query support
+
+### Version 1.1 (May 23, 2026) ~15 hours
 - Added JOIN (INNER and LEFT)
 - Added aggregate functions
 - Fixed CSV parsing for text with commas
 
-### Version 1.2 (May 25th 2026) (~7 hours)
-- Added color output
-- Improved error messages
-- Multi-line query support
+### Version 1.0 (May 17, 2026) ~22 hours
+- Initial release
+- Core SQL operations implemented
+- Basic WHERE clause support
 
-## Tasks
+**Total Development Time: ~44 hours**
 
-- B Tree Code
-- B+ Tree Code (potentially)
+---
+
+##  Quick Start
+
+```bash
+g++ *.cpp -o simpledb
+./simpledb
+```
+
+## Future Development
+
+- B-Tree
+- B+ Tree (potentially)
