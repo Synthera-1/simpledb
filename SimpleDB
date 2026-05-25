@@ -1,0 +1,19 @@
+SimpleDB - The best database ever made in this century! (by lucius coriglione)
+--------------------------------------------------------------------
+supported commands:
+
+  CREATE TABLE name (col TYPE, ...)   -- make a new table
+  INSERT INTO name VALUES (...)       -- add a row
+  SELECT * FROM name                  -- get all rows
+  SELECT * FROM name WHERE col = val  -- filter rows
+  UPDATE name SET col = val WHERE ... -- change a row
+  DELETE FROM name WHERE col = val    -- remove a row
+  DROP TABLE name                     -- delete the table
+
+supported types:    INT  FLOAT  TEXT
+supported constraints:  PRIMARY KEY  NOT NULL  UNIQUE
+aggregate functions:    COUNT  SUM  AVG  MIN  MAX
+clauses:                WHERE  ORDER BY  LIMIT  JOIN
+
+end every query with ';'  |  type EXIT to quit
+--------------------------------------------------------------------

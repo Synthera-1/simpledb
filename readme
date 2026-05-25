@@ -1,0 +1,19 @@
+how to run: 
+
+Terminal: 
+
+    cd src
+    g++ -std=c++17 main.cpp lexer.cpp parser.cpp row.cpp table.cpp database.cpp result.cpp -o database
+    ./database
+
+
+OR with the makefile thing, just copy and paste this: 
+
+    make
+    ./database
+
+TO CLEAR COMPILED BINARY: 
+
+
+
+    make clean

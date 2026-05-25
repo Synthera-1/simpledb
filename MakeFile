@@ -1,0 +1,10 @@
+CXX = g++
+CXXFLAGS = -std=c++17
+
+FILES = main.cpp lexer.cpp parser.cpp row.cpp table.cpp database.cpp result.cpp
+
+all:
+	$(CXX) $(CXXFLAGS) $(FILES) -o database
+
+clean:
+	rm -f database
