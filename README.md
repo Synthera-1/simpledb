@@ -30,3 +30,8 @@ AP Computer Science A Final Project
 - Added color output
 - Improved error messages
 - Multi-line query support
+
+## Tasks
+
+- B Tree Code
+- B+ Tree Code (potentially)
