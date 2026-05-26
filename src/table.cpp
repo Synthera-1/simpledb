@@ -36,7 +36,7 @@ bool Table::rowMatchesConditions(const Row& row, const std::vector<Condition>& c
 
     bool result = row.matchesCondition(conditions[0].column, conditions[0].op,
                                        conditions[0].value,
-                                       getColumnType(conditions[0].column));
+                                       getColumnType(conditions[0].column)); // FIX THIS PART TO INCLUDE THE conditions.column SYNTAX
 
     for (int i = 1; i < conditions.size(); i++) {
         bool next = row.matchesCondition(conditions[i].column, conditions[i].op,
