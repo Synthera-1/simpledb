@@ -13,6 +13,9 @@ public:
 
     // this is the main one. you give it a sql string and it does everything. lex, parse, execute.
     ResultSet execute(const std::string& sql);
+    
+    // let the command handler access our tables (for SHOW TABLES, DESCRIBE, MEMORY commands)
+    friend class CommandHandler;
 
 private:
     // all the tables live here. key is the table name.
@@ -25,6 +28,7 @@ private:
     ResultSet executeSelect(const Statement& stmt);
     ResultSet executeUpdate(const Statement& stmt);
     ResultSet executeDelete(const Statement& stmt);
+    ResultSet executeTruncate(const Statement& stmt);
 
     // join helper. does the actual joining of two tables for SELECT with JOIN.
     ResultSet executeJoin(const Statement& stmt);
