@@ -29,12 +29,12 @@ A lightweight SQL database engine built from scratch in C++.
 - Improved error messages  
 - Multi-line query support
 
-### Version 1.1 (May 23, 2026) ~15 hours
+### Version 1.1 (May 23, 2026) ~19 hours
 - Added JOIN (INNER and LEFT)
 - Added aggregate functions
 - Fixed CSV parsing for text with commas
 
-### Version 1.0 (May 17, 2026) ~22 hours
+### Version 1.0 (May 17, 2026) ~50 hours
 - Initial release
 - Core SQL operations implemented
 - Basic WHERE clause support
