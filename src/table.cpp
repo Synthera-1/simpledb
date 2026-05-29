@@ -112,7 +112,7 @@ ResultSet Table::select(const std::vector<std::string>& selectCols,
     }
 
     // aggregate mode. COUNT SUM AVG MIN MAX. completely different output from regular select.
-    if (!aggregates.empty()) {
+    if (!aggregates.empty())            //logic error. fix this part too.
         for (const AggregateFunc& agg : aggregates) {
             result.columns.push_back(agg.func + "(" + agg.column + ")");
         }
@@ -162,7 +162,7 @@ ResultSet Table::select(const std::vector<std::string>& selectCols,
     std::vector<std::string> outputCols;
     if (selectCols.empty()) {
         // SELECT * - show all columns
-        for (const ColumnDef& col : columns) {
+        for (const ColumnDef& col : columns) { //here too
             outputCols.push_back(col.name);
         }
     } else {
